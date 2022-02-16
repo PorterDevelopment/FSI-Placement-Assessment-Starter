@@ -1,7 +1,7 @@
 // HINT: You can delete this console.log after you no longer need it!
 console.log('JavaScript code has loaded!')
 // First, tell us your name
-let yourName = "Jane Doe" // HINT: Replace this with your own name!
+let yourName = "Bryant Porter" // HINT: Replace this with your own name!
 
 // We'll use these variables to track the counts of each cookie type
 let gb = 0 // Gingerbread
@@ -12,16 +12,41 @@ let sugar = 0 // Sugar Sprinkle
 const credit = document.querySelector('#credit')
 // selecting the element with an id of add-gb
 const gbPlusBtn = document.querySelector('#add-gb')
+const gbMinusBtn = document.querySelector('#minus-gb')
+
+const ccPlusBtn = document.querySelector('#add-cc')
+const ccMinusBtn = document.querySelector('#minus-cc')
+
+const sugarPlusBtn = document.querySelector('#add-sugar')
+const sugarMinusBtn = document.querySelector('#minus-sugar')
 
 // Code to update name display
 credit.textContent = `Created by ${yourName}`
 
 // Event listener for clicks on the "+" button for Gingerbread cookies
-gbPlusBtn.addEventListener('click', function() {
-// HINT: You can delete this console.log after you no longer need it!
-console.log('Gingerbread + button was clicked!')
+gbPlusBtn.addEventListener('click', function(e) {
+const gbResult = document.querySelector('#qty-gb')
+gbResult = 0 + 
 
+// HINT: You can delete this console.log after you no longer need it!
+console.log('Gingerbread + button was clicked!')  
 // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 })
+gbMinusBtn.addEventListener('click', function(e) {
+console.log('Gingerbread - button was clicked!')
+})
 
+ccPlusBtn.addEventListener('click', function(e) {
+console.log('Chocolate Chip + button was clicked!')
+})
+ccMinusBtn.addEventListener('click', function(e) {
+console.log('Chocolate Chip - button was clicked!')
+})
+
+sugarPlusBtn.addEventListener('click', function(e) {
+console.log('Sugar Cookie + button was clicked!')
+})
+sugarMinusBtn.addEventListener('click', function(e) {
+console.log('Sugar Cookie - button was clicked!')
+})
 // TODO: Hook up event listeners for the rest of the buttons
